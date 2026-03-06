@@ -154,7 +154,7 @@ Main
 
 ---
 
-# STEP 6：CLI アプリ化（ToDo⑤）
+## STEP 6：CLI アプリ化（ToDo⑤）
 
 ### 🌱 E-1：ログ解析ツールの CLI 化【実装済(2026/03/06)】
 
@@ -163,7 +163,7 @@ FirstStep で作成したログ解析コードを
 
 ---
 
-## 実装クラス
+実装クラス
 
 ```
 CliParser
@@ -202,7 +202,7 @@ Main
 
 ---
 
-# CLI オプション
+CLI オプション
 
 ```
 
@@ -222,15 +222,13 @@ CLI 使用方法表示
 
 ---
 
-# 実行例
+## 実行例
 
 ### LOGIN 回数集計
 
 ```
 
-java -jar target/Java_2026SecondStep-1.0-SNAPSHOT.jar 
---file samplefile/step5.txt 
---summary
+java -jar target/Java_2026SecondStep-1.0-SNAPSHOT.jar --file samplefile/step5.txt --summary
 
 ```
 
@@ -238,9 +236,9 @@ java -jar target/Java_2026SecondStep-1.0-SNAPSHOT.jar
 
 ```
 
+alice : 2
 bob : 1
 charlie : 2
-dinna : 1
 
 ```
 
@@ -250,9 +248,7 @@ dinna : 1
 
 ```
 
-java -jar target/Java_2026SecondStep-1.0-SNAPSHOT.jar 
---file samplefile/step5.txt 
---duplicate
+java -jar target/Java_2026SecondStep-1.0-SNAPSHOT.jar --file samplefile/step5.txt --duplicate
 
 ```
 
@@ -267,7 +263,7 @@ charlie
 
 ---
 
-# ログフォーマット
+## ログフォーマット
 
 ログは以下の形式。
 
